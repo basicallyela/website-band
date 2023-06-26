@@ -1,0 +1,454 @@
+html {
+    font-size: 3vh;
+    color: white;
+    background-color: #4E3636;
+    font-family: 'Oswald', sans-serif;
+    font-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+    margin: 0;
+	padding: 0;
+    letter-spacing: normal;
+}
+
+/* #4E3636 #CD1818 #321E1E #116D6E */
+footer .as:hover{
+    color: #7b5c5c;
+    text-decoration: underline;
+    font-weight: 300;
+}
+.w200 {
+        font-weight: 200;
+}
+.w300 {
+        font-weight: 300;
+}
+.w400 {
+        font-weight: 400;
+}
+.w500 {
+        font-weight: 500;
+}
+.w600 {
+        font-weight: 600;
+}
+.w700 {
+    font-weight: 700;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 2rem;
+}
+a {
+    font-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+/*NAVBAR*/
+nav{
+    z-index: 11;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: #321E1E;}
+nav a{
+    margin-top: 0.5vw; 
+    margin-left: 1vw;
+}
+nav .logo{
+    margin-left: 2vw;
+}
+nav .navbuttons{
+    margin-top: 0.5vw; 
+    margin-right: 5vw;
+}
+nav .navbuttons button{
+    font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    margin: 0 0.5vw 0 0.5vw;
+}
+nav .navbuttons button:hover{
+    box-shadow: 0em 0em 0.5em 0.5em #CD1818;
+    background-color: #CD1818;
+    border: none;
+
+}
+nav .naslov{
+    color: white;
+    margin: none;
+}
+nav .naslov p{
+    margin-top: 0.5em;
+}
+/*glavni dio*/
+.index img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.dropdown{
+    display: none;
+}
+
+footer{
+    background-color: #321E1E;
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    justify-content: space-between;
+    height: 15vh;
+    color: white;
+}
+footer .kolona{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-left: 3vw;
+}
+footer .kolona p{
+    font-size: large;
+}
+footer .kolona a{
+    font-size: smaller;
+}
+
+.naslovna{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: none;
+    align-items: center;
+    background-color: rgba(78, 54, 54, 0.8);
+    z-index: 10;
+}
+.naslovna h2{
+    position: absolute;
+    margin-top: -140px;
+}
+.kolone{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+}
+footer p{
+    margin-left: 1rem;
+     margin-top: 1vh;
+}
+.kosmo1{
+    display: none;
+}
+
+.galleryja{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   }
+
+/* Slideshow container */
+.slideshow-container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 9vh;
+width: 60vw;
+}
+
+/* Make the images invisible by default */
+.Containers {
+display: none;
+
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+cursor: pointer;
+top: 48%;
+width: auto;
+margin-top: -23px;
+padding: 17px;
+color: grey;
+font-weight: bold;
+transition: 0.4s ease;
+border-radius: 5px 0 0 5px;
+
+user-select: none;
+}
+
+.forward{
+border-radius: 0 5px 5px 0;
+}
+
+
+.Back:hover, .forward:hover {
+background-color: #321E1E;
+}
+
+
+/* The circles or bullets and indicators */
+.dots {
+cursor: pointer;
+height: 1vh;
+width: 0.5vw;
+margin: 0 3px;
+background-color: grey;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+background-color: #321E1E;
+}
+
+/* Faint animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.4s;
+animation-name: fade;
+animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .5}
+to {opacity: 2}
+}
+
+@keyframes fade {
+from {opacity: .5}
+to {opacity: 2}
+}
+
+.svirke li a{
+    font-style: italic;
+}
+.svirke {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    letter-spacing: 0.05rem;
+}
+
+.svirke img{
+    height: 80vh;
+    margin-left: 10vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ksm h1{
+    color: rgba(222, 222, 222, 0.1)
+}
+.a1{
+    position: absolute;
+    margin-top: 8vh;
+    margin-left: 60vw;
+}
+.a2{
+    position: absolute;
+    margin-top: 28vh;
+    margin-left: 50vw;
+}
+.a3{
+    position: absolute;
+    margin-top: 48vh;
+    margin-left: 43vw;
+}
+.a4{
+    position: absolute;
+    margin-top: 68vh;
+    margin-left: 50vw;
+}
+.ksm main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+.tekstic{
+    letter-spacing: 0.02rem;
+    width: 36vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    line-height: normal;
+    white-space: pre-wrap;
+}
+b{
+    font-size: larger;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    html{
+        font-size: 2.5vh;
+    }
+    nav .navbuttons{
+        display: none;
+    }
+    nav{
+        width: 100vw;
+    }
+
+    .dropbtn {
+        font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    margin: 0 3vw 0 3vw;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position:absolute;
+        background-color: rgba(148, 122, 122, 0.95);
+        min-width: 10rem;
+        right: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown:hover .dropdown-content {display: block;}  
+
+      nav{
+        padding-top: 2.5vh;
+      }
+      .naslovna h1{
+        font-size: 2.2rem;
+      }
+      .naslovna .jvt{
+        text-align: center;
+        margin-top: 30vh;
+        width: 50vw;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2rem;
+      }
+      .naslovna h2{
+        margin-top: -100px;
+        font-size: 1.8rem;
+      }
+      footer .kolona p{
+        font-size: 1rem;
+      }
+      footer .kolona{
+        margin-left: 1vw;
+        width: 25vw;
+      }
+
+      footer p{
+        font-size: 0.9rem;
+        margin-left: 0.3rem;
+        margin-right: 1.5vw;
+      }
+      .kontakt{
+        margin-top: 3vh;
+        margin-bottom: none;
+      }
+      .kontakt .container{
+        width: 80vw;
+      }
+      .kontakt form input{
+        width: 80vw;
+      }
+      .kontakt form textarea{
+        width: 80vw;
+      }
+      .kontakt form button{
+        width: 80vw;
+      }
+      .slideshow-container{
+        margin-top: 20vh;
+        width: 100vw;
+      }
+     .dots{
+        height: 0.5vh;
+     }
+     .galerija footer{
+        margin-top: 200vh;
+     }
+     .kosmo1{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-top: 1vh;
+        width: 100vw;
+        margin-left: none;
+        font-size: 1rem;
+        color: rgba(148, 122, 122, 0.95);;
+
+     }
+     .tekstic{
+        margin-top: 10vh;
+        width: 90vw;
+     }
+     .kosmo{
+        display: none;
+     }
+     .svirke {
+        font-size: 1rem;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+        margin-top: 10vh;
+        margin-left: none;
+        letter-spacing: 0.05rem;
+    }
+    
+    .svirke img{
+       display: none;
+    }
+
+}

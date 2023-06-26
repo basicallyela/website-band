@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="opce.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <style>
+            main{
+                margin-top: 10vh;
+                display: flex;
+                justify-content: center;
+            }
+            .container{
+                padding: 5vh 5vw;
+                width: 50vw;
+                height: 75vh;
+                background-color: #321E1E;
+                border: 2px solid #321E1E;
+                border-radius: 30px;
+                
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            form input{
+                margin: 2vh 0;
+                width: 50vw;
+                height: 5vh;
+                border: 2px solid #321E1E;
+                border-radius: 10px;
+                color: white;
+                font-size: larger;
+                color: #4E3636;
+            }
+            form textarea{
+                margin: 2vh 0;
+                width: 50vw;
+                height: 10vh;
+                border: 2px solid #321E1E;
+                border-radius: 10px;
+                color: white;
+                font-size: larger;
+                color: #4E3636;
+            }
+            form button{
+                margin-top: 2vh;
+                width: 50vw;
+                height: 7vh;
+                background-color: #7b5c5c;
+                border: 3px solid #321E1E;
+                border-radius: 10px;
+                color: white;
+                font-size: larger;
+            }
+            form button:hover{
+                background-color: #321E1E;
+                border: 3px solid  #7b5c5c;
+            }
+
+            form input::placeholder, textarea::placeholder{
+                font-family: 'Oswald', sans-serif;
+                color: #7b5c5c;
+                font-weight: 300;
+                padding-left: 0.5rem;
+            }
+
+
+
+/*  #CD1818 #321E1E #116D6E */
+</style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html" class="logo w700">ENTUZIJASTI</a>
+            <div class="navbuttons">
+            <a href="kosmo.html"><button class="w400">Ko smo</button></a>
+            <a href="svirke.html"><button class="w400">Kad smo, gdje smo...</button></a>
+            <a href="galerija.html"><button class="w400">Galerija</button></a>
+            <a href="kontakt.html"><button class="w400">Pisi, javi se...</button></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg></button>
+                <div class="dropdown-content" style="float: left;">
+                    <a href="kosmo.html"  class="w400">Ko smo</a>
+                    <a href="svirke.html" class="w400">Kad smo, gdje smo...</a>
+                    <a href="galerija.html" class="w400">Galerija</a>
+                    <a href="kontakt.html" class="w400">Pisi, javi se...</a>
+                </div>
+              </div>
+        </nav>
+        <main>
+            <div class="kontakt">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="right">
+                        <h2>Piši, javi se</h2>
+                        <form>
+                        <input type="text" class="field" placeholder="Ime/Naziv">
+                        <input type="text" class="field" placeholder="Broj telefona">
+                        <textarea placeholder="Napišite nam datum i događaj za koji nas želite angažirati" class="field"></textarea>
+                        <button class="btn w600">Pošalji</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+
+        
+        <footer>
+            <p class="w700">ENTUZIJASTI</p>
+            <div class="kolone">
+            <div class="kolona">
+                <a>Broj telefona</a>
+                <a>mail</a>
+            </div>
+            <div class="kolona">
+                <a class="as" href="galerija.html">Galerija</a>
+                <a class="as" href="kosmo.html">Ko smo, gdje smo...</a>
+                <a class="as" href="kontakt.html">Pisi, javi se...</a>
+            </div>
+            <div class="kolona">
+                <a class="as"target="_blank" href="https://www.facebook.com/groups/724465619682182/">Facebook</a>
+            </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
