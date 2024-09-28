@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="opce.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
         <title>Homepage</title>
     </head>
     <body>
@@ -28,38 +31,69 @@
                 </div>
               </div>
         </nav>
-        <div class="svirke">
-            <ul>
-                <li>01.07.2023, 20:00 svadba<a href=""></a>, Sarajevo</li>
-                
-                <li>02.08.2023, 20:00 svadba <a href="">Golf tereni</a>, Sarajevo</li>
-                <li>23.09.2023, 20:00 svadba<a href=""></a> Delminium, Sarajevo</li>
 
-                <li>30.09.2023, 20:00 svadba<a href=""></a>, Bihać</li>
-                <li>17.05.2024, Taylor's pub<a href=""></a>, Sarajevo</li>
-                <li>17.05.2024, Taylor's pub<a href=""></a>, Sarajevo</li>
-                <li>18.05.2024, svadba<a href=""></a>, Sarajevo</li>
-                <li>22.05.2024, privatna zabava<a href=""></a>, Sarajevo</li>
-                <li>08.06.2024, Arka pub<a href=""></a>, Sarajevo</li>
-                <li>28.06.2024, Arka pub<a href=""></a>, Sarajevo</li>
-                <li>29.06.2024, privatna zabava<a href=""></a>, Sarajevo</li>
-                <li>27.07.2024, privatna zabava<a href=""></a>, Sarajevo</li>
-                <li>02.08.2024, privatna zabava<a href=""></a>, Neum</li>
-                <li>03.08.2024, privatna zabava<a href=""></a>, Neum</li>
-                <li>10.08.2024, privatna zabava<a href=""></a>, Sarajevo</li>
-                <li>22.08.2024, privatna zabava<a href=""></a>, Sarajevo</li>
-                <li>19.09.2024, privatna zabava<a href=""></a>, Sarajevo</li>
-                <li>13.09.2024, Arka pub<a href=""></a>, Sarajevo</li>
-                <li>20.09.2024, Arka pub<a href=""></a>, Sarajevo</li>
-                <li>21.09.2024, privatna zabava<a href=""></a>, Sarajevo</li>
-                <li>12.10.2024, Taylor's pub<a href=""></a>, Sarajevo</li>
-                <li>26.10.2024, Taylor's pub<a href=""></a>, Sarajevo</li>
-            </ul>
+        <div class="svirke">
+        <div class="slider">
+            <div class="menu">
+                <h3>17.05.2024, Taylor's pub, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>18.05.2024, svadba, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>22.05.2024, privatna zabava, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>08.06.2024, Arka pub, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>28.06.2024, Arka pub, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>29.06.2024, privatna zabava, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>27.07.2024, privatna zabava, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>02.08.2024, privatna zabava, Neum</h3>
+            </div>
+            <div class="menu">
+                <h3>03.08.2024, privatna zabava, Neum</h3>
+            </div>
+            <div class="menu">
+                <h3>10.08.2024, privatna zabava, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>22.08.2024, privatna zabava, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>13.09.2024, Arka pub, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>19.09.2024, privatna zabava, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>20.09.2024, Arka pub, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>21.09.2024, privatna zabava, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>12.10.2024, Taylor's pub, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>25.10.2024, Arka pub, Sarajevo</h3>
+            </div>
+            <div class="menu">
+                <h3>26.10.2024, Taylor's pub, Sarajevo</h3>
+            </div>
+        </div>
             <div class="slikahk">
                 <img src="./media/kontrabas.jpg">
             </div>
+</div>
 
-        </div>
 
         
         <footer>
@@ -80,6 +114,22 @@
             </div>
             </div>
         </footer>
+
+
+
+
+        <script>
+            $(".slider").slick({
+           centerMode: true,
+           centerPadding: '60px',
+           slidesToShow: 5,
+           vertical: true,
+           verticalSwiping: true,
+           arrows: false,
+           swipeToSlide: true,
+           focusOnSelect: true,
+       });
+       </script>
         
     </body>
 </html>
