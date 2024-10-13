@@ -76,10 +76,15 @@ html {
 /* Kraj svirke */
 
 /* #4E3636 #CD1818 #321E1E #116D6E */
+footer .as{
+    width: 15vw;
+    margin: 1vh;
+}
 footer .as:hover{
-    color: #7b5c5c;
-    text-decoration: underline;
-    font-weight: 300;
+  color: white;
+    background-color: #CD1818;
+    box-shadow: 0em 0em 0.5em 0.5em #CD1818;    
+    font-weight: 400;
 }
 .w200 {
         font-weight: 200;
@@ -130,6 +135,7 @@ main .kontakt{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .kontakt form input{
     margin: 2vh 0;
@@ -173,10 +179,7 @@ main .kontakt{
     padding-left: 0.5rem;
 }
 
-footer .as:hover{
-    color: #7b5c5c;
-    text-decoration: underline;
-}
+
 
 
 
@@ -247,20 +250,21 @@ footer{
     left: 0;
     width: 100vw;
     justify-content: space-between;
-    height: 15vh;
+    height: 20vh;
     color: white;
+}
+footer .kolona p{
+  font-size: 3vh;
 }
 footer .kolona{
     display: flex;
     flex-direction: column;
-    width: 20vw;
-    margin-left: 3vw;
+    width: 25vw;
+    margin-left: 5vw;
 }
-footer .kolona p{
-    font-size: large;
-}
+
 footer .kolona a{
-    font-size: smaller;
+  font-size: smaller;
 }
 
 .naslovna{
