@@ -23,9 +23,7 @@ html {
   margin-top: 5vh;
   letter-spacing: 0.05rem;
 }
-.svirkeTxt{
-	flex-direction: column;
-}
+
 .svirke img{
   height: 80vh;
   margin-left: 10vw;
