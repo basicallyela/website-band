@@ -13,6 +13,19 @@ html {
 
 /* Pocetak svirke.html */
 .svirke {
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  margin-right: 5vw;
+  letter-spacing: 0.05rem;
+  z-index: 60;
+}
+.svirkeIslika {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -24,17 +37,18 @@ html {
   letter-spacing: 0.05rem;
 }
 
-.svirke img{
+.svirkeIslika img{
+
   height: 80vh;
-  margin-left: 10vw;
 }
 .godina{
-  height: 80vh;
+  height: 7vh;
   width: 40vw;
   background-color: #321E1E;
-  margin: none;
+  margin-top: none;
   padding: none;
 }
+
 .godina p{
   font-size: 2vh;
   margin: none;
@@ -42,7 +56,7 @@ html {
   font-weight: bold;
 }
 .mid_svirke{
-  height: 72vh;
+  height: 50vh;
   width: 40vw;
   overflow-y: scroll;
   background-color: #321E1E;
@@ -50,11 +64,13 @@ html {
   margin-top: none;
   border-top: none;
   border-left: none;
+  margin-bottom: 0.5vw;
   border-right: none;
 }
 
 .outer_svirke{
   height: 10vh;
+  width: 38.5vw;
   display: flex;
   flex-direction: row;
   margin: 0.5em 0.5em 0.5em 0.5em;
@@ -62,7 +78,7 @@ html {
   
 }
 .svirke h2{
-  font-size: 4vh;
+  font-size: 3vh;
   margin: none;
 }
 
